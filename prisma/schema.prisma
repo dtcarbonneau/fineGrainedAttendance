@@ -53,10 +53,12 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
-model Attendance {
+model attendance {
   id        Int      @id @default(autoincrement())
-  mhsClass  String
+  mhs_class  String
+  time_class_start Int
+  time_class_end Int
   student   String
-  timeIn    Int
-  timeOut   Int
+  time_in    Int
+  time_out   Int
 }

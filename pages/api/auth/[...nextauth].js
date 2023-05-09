@@ -34,7 +34,7 @@ export const authOptions = {
                         https://www.googleapis.com/auth/classroom.profile.emails \
                         https://www.googleapis.com/auth/classroom.guardianlinks.students',
           prompt: 'consent',
-          //access_type: 'offline',
+          access_type: 'offline',
           response_type: 'code'
         }
       }
@@ -88,11 +88,3 @@ export const authOptions = {
 }
 
 export default NextAuth(authOptions)
-//  adapter: PrismaAdapter(prisma),
-//  providers: [
-//    GoogleProvider({
-//      clientId: process.env.GOOGLE_CLIENT_ID,
-//      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-//    }),
-//  ],
-//})
